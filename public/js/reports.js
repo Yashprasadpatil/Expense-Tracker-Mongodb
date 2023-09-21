@@ -23,7 +23,7 @@ async function getDailyReport(e) {
 
     let totalAmount = 0;
     const res = await axios.post(
-      "https://expense-tarcker-17ox.onrender.com/reports/dailyReports",
+      "http://localhost:3000/reports/dailyReports",
       {
         date: formattedDate,
       },
@@ -93,7 +93,7 @@ async function getMonthlyReport(e) {
 
     let totalAmount = 0;
     const res = await axios.post(
-      "https://expense-tarcker-17ox.onrender.com/reports/monthlyReports",
+      "http://localhost:3000/reports/monthlyReports",
       {
         month: formattedMonth,
       },
